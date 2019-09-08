@@ -1,0 +1,11 @@
+{
+  "app_name": {
+    "message": "HyperScript Widget"
+  },
+  "app_description": {
+    "message": "Добавление виджета скриптов разговоров в аккаунт RetailCRM https://digital-shop.retailcrm.ru."
+  },
+  "toolbar_button": {
+    "message": "Открыть скрипт"
+  }
+}

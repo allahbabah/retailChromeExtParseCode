@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_app_name__",
+  "description": "__MSG_app_description__",
+  "version": "1.2.4",
+  "icons": {
+    "128": "images/hyperscript.png"
+  },
+  "default_locale": "ru",
+  "permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "https://digital-shop.retailcrm.ru/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "128": "images/hyperscript.png"
+    },
+    "default_title": "__MSG_toolbar_button__"
+//    "default_popup": "src/popup.html"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": [
+      "src/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://digital-shop.retailcrm.ru/*"
+      ],
+//      "run_at": "document_end",
+      "js": ["src/content.js"]
+    }
+  ]
+}
